@@ -71,7 +71,6 @@ public class SearchWordOnWeb  {
 				wordInfo.setReference(reference);
 			}*/
 			
-			System.out.println(doc.text());
 			/**
 			 * 0 represent html page
 			 * 1 represent page contents by my parse
@@ -81,7 +80,17 @@ public class SearchWordOnWeb  {
 			wordInfo.setDescription(pageContents);
 			wordInfo.setReference(reference);
 		    return wordInfo;*/
-			return resultPage.asXml();
+			
+			/**
+			 * Judge the word result exist
+			 */
+			Element pageexist = doc.getElementById("mw-search-top-table");
+			if(pageexist == null)
+			{
+				return resultPage.asXml();
+			}
+			else
+				return null;
 		} catch (FailingHttpStatusCodeException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -170,10 +179,10 @@ public class SearchWordOnWeb  {
 		return null;
 	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		SearchWordOnWeb searchWordOnWeb = new SearchWordOnWeb();
 		//searchWordOnWeb.searchBaike("计算机");
 		searchWordOnWeb.searchWiki("计算机");
-	}
+	}*/
 	
 }
