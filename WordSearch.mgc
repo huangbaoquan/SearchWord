@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="ecnu.ica.wordsearch.util.WebConstructor" x="807" y="541">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="false" static-accepted="true"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="ecnu.ica.wordsearch.model.XML" x="174" y="378">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"
+            accessors-accepted="true" constructors-accepted="true"/>
+        <Extension destinationClassName="ecnu.ica.wordsearch.model.CreateFloderFile"/>
+    </Class>
+    <Class name="ecnu.ica.wordsearch.model.CreateFloderFile" x="219" y="199">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="false" static-accepted="true"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="ecnu.ica.wordsearch.search.SearchWordOnWeb" x="558" y="524">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="false" static-accepted="true"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="ecnu.ica.wordsearch.parse.HtmlParse"/>
+        <Communication destinationClassName="ecnu.ica.wordsearch.util.WebConstructor"/>
+    </Class>
+    <Class name="ecnu.ica.wordsearch.main.NewEntrance" x="425" y="70">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="false" static-accepted="true"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="ecnu.ica.wordsearch.model.XML"/>
+        <Communication destinationClassName="ecnu.ica.wordsearch.model.CreateFloderFile"/>
+        <Communication destinationClassName="ecnu.ica.wordsearch.search.SearchWordOnWeb"/>
+    </Class>
+    <Class name="ecnu.ica.wordsearch.model.XMLModule" x="256" y="489">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="ecnu.ica.wordsearch.model.XML"/>
+    </Class>
+    <Class name="ecnu.ica.wordsearch.parse.HtmlParse" x="641" y="206">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="false" static-accepted="true"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="ecnu.ica.wordsearch.util.WebConstructor"/>
+        <Communication destinationClassName="ecnu.ica.wordsearch.util.WebConstructor"/>
+    </Class>
+</ClassDiagram>

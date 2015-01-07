@@ -1,0 +1,37 @@
+package ecnu.ica.wordsearch.util;
+import com.gargoylesoftware.htmlunit.BrowserVersion;
+import com.gargoylesoftware.htmlunit.NicelyResynchronizingAjaxController;
+import com.gargoylesoftware.htmlunit.WebClient;
+
+/**
+ *@Author : baoquan Huang 
+ *@Email  : baoquanhuang@gmail.com
+ *@Date   : 2014年12月17日下午9:52:05
+ *@Description : TODO
+ */
+public class WebConstructor {
+	
+	public WebConstructor() 
+	{
+
+	}
+	/**
+	 * 配置模拟浏览器的属性
+	 * @return
+	 */
+	public static WebClient ConstructWebClient()
+	{
+		// 设置模拟浏览器的版本型号
+		WebClient webClient = new WebClient(BrowserVersion.getDefault());
+		// 设置支持浏览器是否解析javascript和 css
+		webClient.getOptions().setJavaScriptEnabled(true);
+		webClient.getOptions().setCssEnabled(false);
+		webClient.setAjaxController(new NicelyResynchronizingAjaxController());
+		// 设置浏览器链接超时时间
+		webClient.getOptions().setTimeout(120000);
+		webClient.getOptions().setThrowExceptionOnScriptError(false);
+		webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
+		webClient.getOptions().setAppletEnabled(false);
+		return webClient;
+	}
+}
