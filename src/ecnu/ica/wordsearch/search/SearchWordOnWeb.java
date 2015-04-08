@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -29,7 +30,7 @@ import ecnu.ica.wordsearch.util.WebConstructor;
  *@Description : TODO
  */
 public class SearchWordOnWeb  {
-	
+	private static Logger log = Logger.getLogger(SearchWordOnWeb.class);
 	public final static String BAIKE = "http://baike.baidu.com/";
 	public final static String WIKI = "http://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5";
 	
@@ -93,16 +94,18 @@ public class SearchWordOnWeb  {
 				return null;
 		} catch (FailingHttpStatusCodeException e) {
 			// TODO Auto-generated catch block
+			log.error(e.toString());
 			e.printStackTrace();
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
+			log.error(e.toString());
 			e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
+			log.error(e.toString());
 			e.printStackTrace();
 		}
 		return null;
-		
 	} 
 	public static String searchBaike(String word)
 	{

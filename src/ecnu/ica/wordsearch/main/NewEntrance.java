@@ -84,7 +84,7 @@ public class NewEntrance {
 							 * search the word on web
 							 */
 							resultbaike = SearchWordOnWeb.searchBaike(word);
-							resultwiki = SearchWordOnWeb.searchWiki(word);
+							//resultwiki = SearchWordOnWeb.searchWiki(word);
 							if(resultbaike != null)
 							{
 								
@@ -125,7 +125,7 @@ public class NewEntrance {
 									e.printStackTrace();
 								}
 							}
-							if(resultwiki != null)
+							/*if(resultwiki != null)
 							{
 								CreateFloderFile.CreateFileAndWrite(eachfilepath, resultwiki, word+"wiki.html");
 							}
@@ -139,7 +139,7 @@ public class NewEntrance {
 								} catch (IOException e) {
 									e.printStackTrace();
 								}
-							}
+							}*/
 						}
 					
 					} catch (Exception e) {

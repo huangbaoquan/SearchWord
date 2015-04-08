@@ -1,0 +1,13 @@
+A/C感应电机 Category： 应用.txt
+闭路电视 Category： 应用.txt
+软件看门狗定时器 Category： 应用.txt
+数字视频录影机 Category： 应用.txt
+千兆无源光纤网络 Category： 应用.txt
+低边开关 Category： 应用.txt
+用户编程机 Category： 应用.txt
+真空荧光显示器 Category： 应用.txt
+超高速通信系统 Category： 应用.txt
+多通道DVR系统 Category： 应用.txt
+宽带无线通信 Category： 应用.txt
+LCD TV Category： 应用.txt
+移动通信终端 Category： 应用.txt

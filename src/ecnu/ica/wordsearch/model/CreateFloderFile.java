@@ -3,8 +3,9 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-
+import java.util.Random;
 import org.apache.log4j.Logger;
+import ecnu.ica.wordsearch.util.TheCrawlerUtil;
 
 /**
  *@Author : baoquan Huang 
@@ -63,12 +64,12 @@ public class CreateFloderFile {
 		}
 		return 0;
 	}
-	
-	/*public static String GenerateRandomFilename()
+	//Create file's Name
+	public static String GenerateRandomFilename()
 	{
 		try 
 		{
-			String fileName = Configuration.GetCurrDateTime();
+			String fileName = TheCrawlerUtil.GetCurrentDate();
 			Random random  =new Random();
 			int randomNum = random.nextInt();
 			fileName = fileName + randomNum +"";
@@ -78,7 +79,7 @@ public class CreateFloderFile {
 			e.printStackTrace();
 		}
 		return null;
-	}*/
+	}
 	
 	//Create file and write contents 
 	public static void CreateFileAndWrite(String path,String contents,String name)
