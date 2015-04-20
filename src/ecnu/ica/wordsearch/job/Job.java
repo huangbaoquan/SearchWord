@@ -1,6 +1,5 @@
 package ecnu.ica.wordsearch.job;
 
-import java.util.ArrayList;
 
 /**
  *@Author : baoquan Huang 

@@ -1,8 +1,6 @@
 package ecnu.ica.wordsearch.SGST;
 
 import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
@@ -16,19 +14,30 @@ import ecnu.ica.wordsearch.model.CreateFloderFile;
 import ecnu.ica.wordsearch.util.TheCrawlerUtil;
 import ecnu.ica.wordsearch.util.WebConstructor;
 
-
 /**
- *@Author : baoquan Huang 
- *@Email  : baoquanhuang@gmail.com
- *@Date   : 2015年4月3日上午1:38:33
+ *@ClassName   : SearchPaper.java
+ *@Package     : ecnu.ica.wordsearch.SGST
+ *@Author      : baoquanhuang 
+ *@Email       : baoquanhuang@gmail.com
+ *@Date        : 2015年4月10日上午11:21:10
  *@Description : TODO
  */
 public class SearchPaper {
 	private static Logger log = Logger.getLogger(SearchPaper.class);
 	final private static String KEY_WORD__STRING= "集成电路"; 
+	/**
+	 * @Fields YIWENXIAN : The Yi Address
+	 */
 	final private static String YIWENXIAN = "http://lib.sgst.cn/";
 	public static String PATH = System.getProperty("user.dir");
+	/**
+	 * @Fields FilePath :Search Word's storage location
+	 */
 	final private String FilePath =PATH + File.separator + KEY_WORD__STRING;
+	/**
+	 * @Fields TotalURL : global URL 
+	 */
+	public static ArrayList<String>  TotalURL = new ArrayList<>();
 	public SearchPaper() {
 	}
 	
@@ -60,12 +69,14 @@ public class SearchPaper {
 		return page;
 	}*/
 	
-	/**
-	 *use yi wen xian Entrance to Search Paper 
-	 */
+	/** 
+	* @Title       : SearchPaper
+	* @Description : TODO Use yi wen xian Entrance to Search Key Word Paper
+	* @return      : 
+	*/
 	public void searchPaperOnlyHTML()
 	{
-		ArrayList<String> TotalURL = new ArrayList<>();
+		//ArrayList<String> TotalURL = new ArrayList<>();
 		WebClient webClient = WebConstructor.ConstructWebClient();
 		Downloader downloader = new Downloader();
 		try 
@@ -77,6 +88,9 @@ public class SearchPaper {
 			HtmlPage nextPage = null;
 			try 
 			{
+				/**
+				 * Crawl all URL
+				 */
 				HtmlPage searchPage = page.getAnchorByHref("javaScript:searchPapers('paper','paperField');").click();
 				//System.out.println(searchPage.asText());
 				TotalURL = downloader.fetchPaperUrl(searchPage);
@@ -85,14 +99,32 @@ public class SearchPaper {
 					nextPage = downloader.clickNextPage(searchPage);
 					while(nextPage != null)
 					{
+						int i = 5;
 						ArrayList<String> tempURL = downloader.fetchPaperUrl(nextPage);
 						TotalURL.addAll(tempURL);
+						HtmlPage tempNextPage = nextPage;
 						nextPage = downloader.clickNextPage(nextPage);
+						/**
+						 * try 3 times to get nextPage in order to exception
+						 */
+						while(nextPage == null && i > 0)
+						{
+							nextPage = downloader.clickNextPage(tempNextPage);
+							if(nextPage != null)
+							{
+								break;
+							}
+							i--;
+						}
 						System.out.println(TheCrawlerUtil.GetCurrentDate() + 
 								" Waiting For Downloading URL's Numbers: " + TotalURL.size());
 					}
 				}
 				webClient.closeAllWindows();
+				/**
+				 * Get All URL And Parse Those URL
+				 * Start The JOB Of URL
+				 */
 				if(CreateFloderFile.CreateFolder(PATH, KEY_WORD__STRING))
 				{
 					String filepath = PATH + File.separator + KEY_WORD__STRING;

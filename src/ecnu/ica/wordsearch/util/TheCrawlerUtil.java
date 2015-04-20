@@ -27,6 +27,16 @@ public class TheCrawlerUtil {
 		String time = sdf.format(new Date());
 		return time;
 	}
+	public static String GetTimeSpan(long startTime,long endTime)
+	{
+		long l = endTime - startTime;
+		long day=l/(24*60*60*1000);
+		long hour=(l/(60*60*1000)-day*24);
+		long min=((l/(60*1000))-day*24*60-hour*60);
+		long s=(l/1000-day*24*60*60-hour*60*60-min*60);
+		System.out.println(""+day+"天"+hour+"小时"+min+"分"+s+"秒");  
+		return (""+day+"天"+hour+"小时"+min+"分"+s+"秒");
+	}
 	
 	/**
 	 * log in error or warning informations into logger
@@ -35,24 +45,40 @@ public class TheCrawlerUtil {
 	 */
 	public static String LogErrorInfo(Exception e)
 	{
-		String error = "";
-		StringWriter writer = new StringWriter();
-		PrintWriter printWriter = new PrintWriter(writer);
-		e.printStackTrace(printWriter);
-		error = writer.toString();
-		return error;
+		try 
+		{
+			String error = "";
+			StringWriter writer = new StringWriter();
+			PrintWriter printWriter = new PrintWriter(writer);
+			e.printStackTrace(printWriter);
+			error = writer.toString();
+			return error;
+		} catch (Exception e1) {
+			LOGGER.error(e1.toString());
+			e1.printStackTrace();
+		}
+		return null;
 	}
 	public static String ToStopChar(String word)
 	{
-		if(word.contains("/"))
+		String string = word;
+		if(string.contains("/"))
 		{
-			word = word.replaceAll("/", "");
+			string = string.replaceAll("/", "");
 		}
-		if(word.contains("&"))
+		if(string.contains("&"))
 		{
-			word = word.replaceAll("&", "");
+			string = string.replaceAll("&", "");
 		}
-		return word;
+		if(string.contains(":"))
+		{
+			string = string.replaceAll(":", "");
+		}
+		if(string.contains("-"))
+		{
+			string = string.replaceAll("-", "");
+		}
+		return string;
 	}
 	
 	

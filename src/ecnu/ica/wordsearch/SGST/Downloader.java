@@ -1,7 +1,6 @@
 package ecnu.ica.wordsearch.SGST;
 
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
@@ -11,12 +10,10 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import com.gargoylesoftware.htmlunit.ElementNotFoundException;
-import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
 import ecnu.ica.wordsearch.util.TheCrawlerUtil;
-import ecnu.ica.wordsearch.util.WebConstructor;
 
 /**
  *@Author : baoquan Huang 
@@ -27,7 +24,7 @@ import ecnu.ica.wordsearch.util.WebConstructor;
 public class Downloader {
 
 	private static Logger logger = Logger.getLogger(Downloader.class);
-	final private static String URL = "http://lib-wf.sgst.cn/";
+	final private static String URL = "http://lib-wf.sgst.cn";
 	public Downloader() {
 		// TODO Auto-generated constructor stub
 	}
@@ -76,7 +73,6 @@ public class Downloader {
 		return paperUrl;
 	}
 	
-	
 	/**
 	 * click next page
 	 */
@@ -86,6 +82,7 @@ public class Downloader {
 		try 
 		{
 			nextpageAnchor = page.getAnchorByText("下一页");
+			
 		} catch (ElementNotFoundException e1) {
 			logger.error(e1.toString());
 			e1.printStackTrace();

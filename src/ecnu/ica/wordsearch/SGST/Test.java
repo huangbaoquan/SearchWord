@@ -1,14 +1,5 @@
 package ecnu.ica.wordsearch.SGST;
 
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.util.ArrayList;
-
-import com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException;
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
-
-import ecnu.ica.wordsearch.util.WebConstructor;
 
 /**
  *@Author : baoquan Huang 

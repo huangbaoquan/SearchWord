@@ -20,13 +20,14 @@ public class QueryURL {
 	 * @param popCount
 	 * @return
 	 */
-	public static ArrayList<String> queryUrl(ArrayList<String> urlList,int popCount)
+	public static ArrayList<String> queryUrl(ArrayList<String> urlList,int popCount,int ID)
 	{
 		try 
 		{
 			ArrayList<String> list = new ArrayList<>();
 			synchronized (urlList) 
 			{
+				System.out.println("Thread ID:" + ID + " |Remain Task Count: "+ urlList.size());
 				while(popCount > 0)
 				{
 					if(urlList.size() <= 0)
