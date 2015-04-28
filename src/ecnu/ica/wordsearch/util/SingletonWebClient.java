@@ -1,6 +1,5 @@
 package ecnu.ica.wordsearch.util;
 
-
 import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.gargoylesoftware.htmlunit.NicelyResynchronizingAjaxController;
 import com.gargoylesoftware.htmlunit.WebClient;
@@ -35,7 +34,7 @@ public class SingletonWebClient {
 		webClient.getOptions().setAppletEnabled(false);
 	}
 
-	public static SingletonWebClient getInstance()
+	public static final SingletonWebClient getInstance()
 	{
 		return SingletonHolder.INSTANCE_CLIENT;
 	}
@@ -62,4 +61,7 @@ public class SingletonWebClient {
 		else
 			System.out.println("false");
 	}*/
+
+
+	
 }

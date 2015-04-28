@@ -11,8 +11,8 @@ import org.jsoup.select.Elements;
 
 import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
+import com.gargoylesoftware.htmlunit.html.HtmlInput;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
-
 import ecnu.ica.wordsearch.util.TheCrawlerUtil;
 
 /**
@@ -99,5 +99,39 @@ public class Downloader {
 			}
 		}
 		return null;
+	}
+	/**
+	 * Scroll assign Page
+	 */
+	public HtmlPage scrollPage(HtmlPage page ,int num)
+	{
+		//set goto page num
+		HtmlInput GoToPageBoxPagerControl1 = (HtmlInput) page.getElementById("GoToPageBoxPagerControl1");
+		GoToPageBoxPagerControl1.setValueAttribute(num+"");
+		//click button
+		HtmlInput jumpbutton = page.getFirstByXPath("//*[@id=\"content_paper\"]/div/p[3]/input[2]");
+		HtmlPage gotopage;
+		try {
+			gotopage = jumpbutton.click();
+			return gotopage;
+		} catch (IOException e) {
+			logger.error(e.toString());
+			e.printStackTrace();
+		}
+		return null;
+	}
+	public int fetchPaperNum(HtmlPage page)
+	{
+		Document doc = Jsoup.parse(page.asXml());
+		String count = doc.getElementsByClass("page_link").first().text();
+		String number = "";
+		for(int i=0;i<count.length();i++)
+		{
+			if(count.charAt(i)>='0' && count.charAt(i)<='9')
+			{
+				number+=count.charAt(i);
+			}
+		}
+		return Integer.parseInt(number);
 	}
 }

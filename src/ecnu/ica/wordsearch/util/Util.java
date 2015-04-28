@@ -14,5 +14,4 @@ public class Util {
 		String time = sdf.format(new Date());
 		return time;
 	}
-
 }

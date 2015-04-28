@@ -27,6 +27,8 @@ public class TheCrawlerUtil {
 		String time = sdf.format(new Date());
 		return time;
 	}
+	
+	
 	public static String GetTimeSpan(long startTime,long endTime)
 	{
 		long l = endTime - startTime;

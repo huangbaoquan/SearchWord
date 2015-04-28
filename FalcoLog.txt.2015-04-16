@@ -1,0 +1,3 @@
+0    2015-04-16 20:11:00379 [main] ERROR ecnu.ica.wordsearch.SGST.Search  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[href] attributeValue=[javascript:s();]
+0    2015-04-16 20:12:20278 [main] ERROR ecnu.ica.wordsearch.SGST.Search  - org.apache.http.conn.HttpHostConnectException: Connect to lib-wf.sgst.cn:80 [lib-wf.sgst.cn/116.236.205.148] failed: Connection timed out: connect
+0    2015-04-16 20:47:26600 [main] ERROR ecnu.ica.wordsearch.SGST.Search  - org.apache.http.conn.HttpHostConnectException: Connect to lib-wf.sgst.cn:80 [lib-wf.sgst.cn/116.236.205.148] failed: Connection timed out: connect
