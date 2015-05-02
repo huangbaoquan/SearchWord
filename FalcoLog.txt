@@ -1,1 +1,11 @@
-0    2015-04-25 21:45:43560 [main] ERROR ecnu.ica.wordsearch.SGST.Downloader  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[href] attributeValue=[goToPage('GoToPageBoxPagerControl1')]
+101841 2015-05-02 00:00:49368 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+0    2015-05-02 00:11:15173 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+8124 2015-05-02 00:11:23297 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - java.lang.IndexOutOfBoundsException
+45536 2015-05-02 00:12:00709 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+54464 2015-05-02 00:12:09637 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - java.lang.IndexOutOfBoundsException
+0    2015-05-02 14:52:39802 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+0    2015-05-02 16:46:10508 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+0    2015-05-02 17:16:51101 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+42184 2015-05-02 17:17:33285 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+0    2015-05-02 17:33:03948 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+0    2015-05-02 17:45:01636 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 

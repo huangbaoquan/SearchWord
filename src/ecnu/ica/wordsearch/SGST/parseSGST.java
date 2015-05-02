@@ -1,10 +1,19 @@
 package ecnu.ica.wordsearch.SGST;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+
 import org.apache.log4j.Logger;
 
+import com.gargoylesoftware.htmlunit.BinaryPage;
+import com.gargoylesoftware.htmlunit.Page;
 import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
+import ecnu.ica.wordsearch.model.CreateFloderFile;
 import ecnu.ica.wordsearch.parse.parse;
 import ecnu.ica.wordsearch.util.SingletonWebClient;
 import ecnu.ica.wordsearch.util.WebConstructor;
@@ -66,5 +75,47 @@ public class parseSGST implements parse{
 			LOGGER.error(url);
 		}
 		return null;
+	}
+	/** 
+	* @Title       : parseSGST
+	* @Description : TODO download PDF
+	* @return      : @param url
+	*/
+	public void downloadpdf(String url,String path)
+	{
+		try 
+		{
+			WebClient webClient = SingletonWebClient.getInstance().webClient;
+			HtmlPage page = webClient.getPage(url);
+			if(page != null)
+			{
+				HtmlAnchor downAnchor = page.getFirstByXPath("//*[@id=\"fulltext\"]/a[2]");
+				if(downAnchor != null)
+				{
+					/*HtmlPage p = downAnchor.click();
+					System.out.println(p.asText());*/
+					
+					InputStream is = downAnchor.click().getWebResponse().getContentAsStream();
+					FileOutputStream os = new FileOutputStream(new File(path + File.separator + CreateFloderFile.GenerateRandomFilename()+".pdf"));
+					byte[] by = new byte[1024];
+					int read = 0;
+					while((read = is.read(by))!= -1)
+					{
+						os.write(by,0,read);
+					}
+					os.flush();
+					os.close();
+					is.close();
+					System.out.println("done!\n");
+				}
+				else
+				{
+					LOGGER.info(url + " download failed");
+				}
+			}
+			webClient.closeAllWindows();
+		} catch (Exception e) {
+			LOGGER.error(e.toString());
+		}
 	}
 }

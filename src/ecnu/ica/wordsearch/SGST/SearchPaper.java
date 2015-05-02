@@ -42,32 +42,29 @@ public class SearchPaper {
 	}
 	
 	/**
+	 * Login in SGST.cn
 	 * request 集成电路  and return the paper page 
 	 * @return
 	 */
-	/*public HtmlPage searchPaper()
+	public HtmlPage searchPaper()
 	{
 		//Login the 
 		Login login = new Login();
 		HtmlPage page = login.login();
 		
-		HtmlInput htmlInput = page.getHtmlElementById("top_search_keyword");
+		HtmlInput htmlInput = page.getHtmlElementById("paperField");
 		htmlInput.setValueAttribute(KEY_WORD__STRING);		
 		try 
 		{
-			HtmlPage searchResultPage = page.getAnchorByHref("javascript:topSearch();").click();
-			HtmlPage paperPage = searchResultPage.getAnchorByHref("search/s_list?keyword=%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF&type=%E8%AE%BA%E6%96%87").click();
-			System.out.println(paperPage.asText());
-			return paperPage;
-		} catch (ElementNotFoundException e) {
+			HtmlPage searchResultPage = page.getAnchorByHref("javaScript:searchPapers('paper','paperField');").click();
+//			System.out.println(searchResultPage.asText());
+			return searchResultPage;
+		} catch (Exception e) {
 			log.error(e.toString());
 			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return page;
-	}*/
+		} 
+		return null;
+	}
 	
 	/** 
 	* @Title       : SearchPaper

@@ -12,6 +12,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.html.HtmlPasswordInput;
 import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
 
+import ecnu.ica.wordsearch.util.SingletonWebClient;
 import ecnu.ica.wordsearch.util.WebConstructor;
 
 /**
@@ -24,12 +25,12 @@ public class Login {
 	private static Logger log = Logger.getLogger(Login.class);
 	final private static String LOGIN_STRING = "huangbaoquan2015";
 	final private static String PASS_STRING = "12345ecnu";
-	final private static String LOGINURL_STRING = "http://116.236.205.179/ids/LoginServlet?coAppName=VVVNUw%3D%3D&coSessionId=VmRySkdsNldHRHJ4bWJTNHk5c3pOS2hRUFBCclpSd0xRdnNKWEpmcDBMR2oyZExURHQ5UiEtMTc1MTY3Mjk3ITE0Mjc5OTEzNjkyMjQ%3D&surl=aHR0cDovL21lbWJlci5zZ3N0LmNuOjgwL3V1bXMvbG9naW4uanNwP2JhY2tVcmw9aHR0cDovL3d3dy5zZ3N0LmNuLyZjb20udHJzLnVzZUlEU1NTT1BhZ2U9MQ==";
-	
+	final private static String LOGINURL_STRING = "http://116.236.205.179/ids/LoginServlet?coAppName=VVVNUw%3D%3D&coSessionId=VkQxTnRQOGI3bkZoZkJqMzZMVEN2TXBtbTdOR2trcHN4cjF0a1J4NkwybEZMalJYNHlaRyEtMTE1MjkwNjkzMyExNDMwNDg2ODI5ODQ0&surl=aHR0cDovL21lbWJlci5zZ3N0LmNuOjgwL3V1bXMvbG9naW4uanNwP2JhY2tVcmw9aHR0cDovL2xpYi5zZ3N0LmNuLyZjb20udHJzLnVzZUlEU1NTT1BhZ2U9MQ==";
+
 	public Login() {}
 	public HtmlPage login()
 	{
-		WebClient webClient = WebConstructor.ConstructWebClient();
+		WebClient webClient = SingletonWebClient.getInstance().webClient;
 		try 
 		{
 			HtmlPage loginPage = webClient.getPage(LOGINURL_STRING);
@@ -61,7 +62,6 @@ public class Login {
 		}
 		return null;
 	}
-
 	/*public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Login login = new Login();

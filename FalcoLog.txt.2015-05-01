@@ -1,0 +1,13 @@
+0    2015-05-01 20:54:45306 [main] ERROR ecnu.ica.wordsearch.SGST.DownloadPDF  - java.lang.NullPointerException
+0    2015-05-01 21:05:40370 [main] ERROR ecnu.ica.wordsearch.SGST.DownloadPDF  - java.lang.NullPointerException
+0    2015-05-01 21:11:26785 [main] ERROR ecnu.ica.wordsearch.SGST.DownloadPDF  - java.lang.NullPointerException
+0    2015-05-01 21:18:22558 [main] ERROR ecnu.ica.wordsearch.SGST.DownloadPDF  - java.lang.NullPointerException
+0    2015-05-01 21:38:23646 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+524930 2015-05-01 21:47:08576 [main] INFO  org.apache.http.impl.execchain.RetryExec  - I/O exception (java.net.SocketException) caught when processing request to {}->http://lib-wf.sgst.cn:80: Operation timed out
+524930 2015-05-01 21:47:08576 [main] INFO  org.apache.http.impl.execchain.RetryExec  - Retrying request to {}->http://lib-wf.sgst.cn:80
+0    2015-05-01 23:30:09272 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+1    2015-05-01 23:38:01527 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+34217 2015-05-01 23:38:35743 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - java.lang.ClassCastException: java.io.ByteArrayInputStream cannot be cast to java.io.FileInputStream
+88321 2015-05-01 23:39:29847 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+0    2015-05-01 23:41:22365 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+0    2015-05-01 23:59:07527 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 

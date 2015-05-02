@@ -13,6 +13,7 @@ import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlInput;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
+
 import ecnu.ica.wordsearch.util.TheCrawlerUtil;
 
 /**
@@ -122,16 +123,29 @@ public class Downloader {
 	}
 	public int fetchPaperNum(HtmlPage page)
 	{
-		Document doc = Jsoup.parse(page.asXml());
-		String count = doc.getElementsByClass("page_link").first().text();
-		String number = "";
-		for(int i=0;i<count.length();i++)
+		try 
 		{
-			if(count.charAt(i)>='0' && count.charAt(i)<='9')
+			if(page != null)
 			{
-				number+=count.charAt(i);
+				Document doc = Jsoup.parse(page.asXml());
+				String count = doc.getElementsByClass("page_link").first().text();
+				String number = "";
+				if(count != null)
+				{
+					for(int i=0;i<count.length();i++)
+					{
+						if(count.charAt(i)>='0' && count.charAt(i)<='9')
+						{
+							number+=count.charAt(i);
+						}
+					}
+					return Integer.parseInt(number);
+				}
 			}
+		} catch (NumberFormatException e) {
+			logger.error(e.toString());
+			e.printStackTrace();
 		}
-		return Integer.parseInt(number);
+		return 90000;
 	}
 }

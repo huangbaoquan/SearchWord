@@ -12,7 +12,6 @@ import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlInput;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
-import ecnu.ica.wordsearch.job.SGSTJob;
 import ecnu.ica.wordsearch.model.CreateFloderFile;
 import ecnu.ica.wordsearch.task.BreakpointTask;
 import ecnu.ica.wordsearch.util.Configuration;
