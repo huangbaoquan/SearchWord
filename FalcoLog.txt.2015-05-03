@@ -1,0 +1,92 @@
+0    2015-05-03 15:22:29714 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+24270 2015-05-03 15:22:53984 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+0    2015-05-03 15:45:18253 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+5142 2015-05-03 15:45:23395 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_zggyjj200507003
+6927 2015-05-03 15:45:25180 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+11533 2015-05-03 15:45:29786 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_bjlgdxxb201109017&Type=Download
+17222 2015-05-03 15:45:35475 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_qjgylzs201403042&Type=Download
+18572 2015-05-03 15:45:36825 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D422937.aspx download failed
+19520 2015-05-03 15:45:37773 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Conference_8236996.aspx download failed
+23876 2015-05-03 15:45:42129 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jsjjczzxt201309003&Type=Download
+28210 2015-05-03 15:45:46463 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_xajtdxxb201406018&Type=Download
+29633 2015-05-03 15:45:47886 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D425285.aspx download failed
+34789 2015-05-03 15:45:5342 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jsjfzsjytxxxb201401020&Type=Download
+35307 2015-05-03 15:45:53560 [main] ERROR ecnu.ica.wordsearch.SGST.Downloader  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[<text>] attributeValue=[下一页]
+35308 2015-05-03 15:45:53561 [main] ERROR ecnu.ica.wordsearch.SGST.Downloader  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[<text>] attributeValue=[下一页]
+35309 2015-05-03 15:45:53562 [main] ERROR ecnu.ica.wordsearch.SGST.Downloader  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[<text>] attributeValue=[下一页]
+35309 2015-05-03 15:45:53562 [main] ERROR ecnu.ica.wordsearch.SGST.Downloader  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[<text>] attributeValue=[下一页]
+35310 2015-05-03 15:45:53563 [main] ERROR ecnu.ica.wordsearch.SGST.Downloader  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[<text>] attributeValue=[下一页]
+35310 2015-05-03 15:45:53563 [main] ERROR ecnu.ica.wordsearch.SGST.Downloader  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[<text>] attributeValue=[下一页]
+35311 2015-05-03 15:45:53564 [main] ERROR ecnu.ica.wordsearch.SGST.DownloadPDF  - java.lang.NullPointerException
+0    2015-05-03 15:57:09693 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+5329 2015-05-03 15:57:1522 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_zggyjj200507003
+7255 2015-05-03 15:57:16948 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+12124 2015-05-03 15:57:21817 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_bjlgdxxb201109017&Type=Download
+18345 2015-05-03 15:57:2838 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_qjgylzs201403042&Type=Download
+19980 2015-05-03 15:57:29673 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D422937.aspx download failed
+23972 2015-05-03 15:57:33665 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Conference_8236996.aspx download failed
+28615 2015-05-03 15:57:38308 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jsjjczzxt201309003&Type=Download
+33279 2015-05-03 15:57:42972 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_xajtdxxb201406018&Type=Download
+34726 2015-05-03 15:57:44419 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D425285.aspx download failed
+39996 2015-05-03 15:57:49689 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jsjfzsjytxxxb201401020&Type=Download
+40404 2015-05-03 15:57:5097 [main] ERROR ecnu.ica.wordsearch.SGST.Downloader  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[<text>] attributeValue=[下一页]
+40405 2015-05-03 15:57:5098 [main] ERROR ecnu.ica.wordsearch.SGST.Downloader  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[<text>] attributeValue=[下一页]
+40405 2015-05-03 15:57:5098 [main] ERROR ecnu.ica.wordsearch.SGST.Downloader  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[<text>] attributeValue=[下一页]
+40406 2015-05-03 15:57:5099 [main] ERROR ecnu.ica.wordsearch.SGST.Downloader  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[<text>] attributeValue=[下一页]
+40406 2015-05-03 15:57:5099 [main] ERROR ecnu.ica.wordsearch.SGST.Downloader  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[<text>] attributeValue=[下一页]
+40407 2015-05-03 15:57:50100 [main] ERROR ecnu.ica.wordsearch.SGST.Downloader  - com.gargoylesoftware.htmlunit.ElementNotFoundException: elementName=[a] attributeName=[<text>] attributeValue=[下一页]
+40407 2015-05-03 15:57:50100 [main] ERROR ecnu.ica.wordsearch.SGST.DownloadPDF  - java.lang.NullPointerException
+0    2015-05-03 16:19:2635 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+9677 2015-05-03 16:19:35712 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_zggyjj200507003
+11833 2015-05-03 16:19:37868 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+17877 2015-05-03 16:19:43912 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_bjlgdxxb201109017&Type=Download
+23320 2015-05-03 16:19:49355 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_qjgylzs201403042&Type=Download
+24870 2015-05-03 16:19:50905 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D422937.aspx download failed
+25859 2015-05-03 16:19:51894 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Conference_8236996.aspx download failed
+30450 2015-05-03 16:19:56485 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jsjjczzxt201309003&Type=Download
+35133 2015-05-03 16:20:01168 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_xajtdxxb201406018&Type=Download
+36597 2015-05-03 16:20:02632 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D425285.aspx download failed
+42406 2015-05-03 16:20:08441 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jsjfzsjytxxxb201401020&Type=Download
+42977 2015-05-03 16:20:0912 [main] ERROR ecnu.ica.wordsearch.SGST.DownloadPDF  - java.lang.NullPointerException
+0    2015-05-03 16:37:1849 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+6165 2015-05-03 16:37:24214 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_zggyjj200507003
+8009 2015-05-03 16:37:2658 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+47759 2015-05-03 16:38:05808 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_bjlgdxxb201109017&Type=Download
+53280 2015-05-03 16:38:11329 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_qjgylzs201403042&Type=Download
+54745 2015-05-03 16:38:12794 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D422937.aspx download failed
+56615 2015-05-03 16:38:14664 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Conference_8236996.aspx download failed
+64506 2015-05-03 16:38:22555 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jsjjczzxt201309003&Type=Download
+69042 2015-05-03 16:38:2791 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_xajtdxxb201406018&Type=Download
+70912 2015-05-03 16:38:28961 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D425285.aspx download failed
+76247 2015-05-03 16:38:34296 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jsjfzsjytxxxb201401020&Type=Download
+76658 2015-05-03 16:38:34707 [main] ERROR ecnu.ica.wordsearch.SGST.DownloadPDF  - java.lang.NullPointerException
+0    2015-05-03 16:41:15802 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+12605 2015-05-03 16:41:28407 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_zggyjj200507003
+186719 2015-05-03 16:44:22521 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+203512 2015-05-03 16:44:39314 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_bjlgdxxb201109017&Type=Download
+330326 2015-05-03 16:46:46128 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_qjgylzs201403042&Type=Download
+350882 2015-05-03 16:47:06684 [main] INFO  org.apache.http.impl.execchain.RetryExec  - I/O exception (java.net.SocketException) caught when processing request to {}->http://stat.sgst.cn:80: Operation timed out
+350882 2015-05-03 16:47:06684 [main] INFO  org.apache.http.impl.execchain.RetryExec  - Retrying request to {}->http://stat.sgst.cn:80
+358528 2015-05-03 16:47:14330 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D422937.aspx download failed
+366281 2015-05-03 16:47:2283 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Conference_8236996.aspx download failed
+1    2015-05-03 16:51:16706 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+0    2015-05-03 17:12:01357 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+14735 2015-05-03 17:12:1692 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_zggyjj200507003
+17653 2015-05-03 17:12:1910 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+29322 2015-05-03 17:12:30679 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_bjlgdxxb201109017&Type=Download
+50007 2015-05-03 17:12:51364 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_qjgylzs201403042&Type=Download
+51880 2015-05-03 17:12:53237 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D422937.aspx download failed
+53314 2015-05-03 17:12:54671 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Conference_8236996.aspx download failed
+64232 2015-05-03 17:13:05589 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jsjjczzxt201309003&Type=Download
+78384 2015-05-03 17:13:19741 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_xajtdxxb201406018&Type=Download
+0    2015-05-03 17:21:49828 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+20764 2015-05-03 17:22:10592 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_zggyjj200507003
+23545 2015-05-03 17:22:13373 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+0    2015-05-03 17:24:03630 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+24667 2015-05-03 17:24:28297 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+24838 2015-05-03 17:24:28468 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - java.lang.ClassCastException: com.gargoylesoftware.htmlunit.TextPage cannot be cast to com.gargoylesoftware.htmlunit.html.HtmlPage
+24949 2015-05-03 17:24:28579 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - java.lang.ClassCastException: com.gargoylesoftware.htmlunit.TextPage cannot be cast to com.gargoylesoftware.htmlunit.html.HtmlPage
+30567 2015-05-03 17:24:34197 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - java.lang.ClassCastException: com.gargoylesoftware.htmlunit.TextPage cannot be cast to com.gargoylesoftware.htmlunit.html.HtmlPage
+34822 2015-05-03 17:24:38452 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Conference_8236996.aspx download failed
+146443 2015-05-03 17:26:3073 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D425285.aspx download failed
+356346 2015-05-03 17:29:59976 [main] ERROR ecnu.ica.wordsearch.SGST.DownloadPDF  - java.lang.NullPointerException

@@ -106,7 +106,7 @@ public class parseSGST implements parse{
 					os.flush();
 					os.close();
 					is.close();
-					System.out.println("done!\n");
+					System.out.println("downloading PDF...\n");
 				}
 				else
 				{
@@ -115,6 +115,7 @@ public class parseSGST implements parse{
 			}
 			webClient.closeAllWindows();
 		} catch (Exception e) {
+			e.printStackTrace();
 			LOGGER.error(e.toString());
 		}
 	}

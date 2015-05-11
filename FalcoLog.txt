@@ -1,11 +1,33 @@
-101841 2015-05-02 00:00:49368 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
-0    2015-05-02 00:11:15173 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
-8124 2015-05-02 00:11:23297 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - java.lang.IndexOutOfBoundsException
-45536 2015-05-02 00:12:00709 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
-54464 2015-05-02 00:12:09637 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - java.lang.IndexOutOfBoundsException
-0    2015-05-02 14:52:39802 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
-0    2015-05-02 16:46:10508 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
-0    2015-05-02 17:16:51101 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
-42184 2015-05-02 17:17:33285 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
-0    2015-05-02 17:33:03948 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
-0    2015-05-02 17:45:01636 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+0    2015-05-04 15:26:47240 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+15030 2015-05-04 15:27:02270 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+55053 2015-05-04 15:27:42293 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D422937.aspx download failed
+63000 2015-05-04 15:27:50240 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Conference_8236996.aspx download failed
+117790 2015-05-04 15:28:4530 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D425285.aspx download failed
+142597 2015-05-04 15:29:09837 [main] ERROR ecnu.ica.wordsearch.SGST.DownloadPDF  - java.lang.NullPointerException
+0    2015-05-04 15:51:03255 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+26473 2015-05-04 15:51:29728 [main] INFO  org.apache.http.impl.execchain.RetryExec  - I/O exception (java.net.SocketException) caught when processing request to {}->http://116.236.205.179:80: Connection reset
+26473 2015-05-04 15:51:29728 [main] INFO  org.apache.http.impl.execchain.RetryExec  - Retrying request to {}->http://116.236.205.179:80
+92558 2015-05-04 15:52:35813 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2111582.aspx download failed
+181957 2015-05-04 15:54:05212 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D422937.aspx download failed
+204691 2015-05-04 15:54:27946 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Conference_8236996.aspx download failed
+361526 2015-05-04 15:57:04781 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D425285.aspx download failed
+411871 2015-05-04 15:57:55126 [main] ERROR ecnu.ica.wordsearch.SGST.DownloadPDF  - java.lang.ClassCastException: com.gargoylesoftware.htmlunit.UnexpectedPage cannot be cast to com.gargoylesoftware.htmlunit.html.HtmlPage
+0    2015-05-04 16:33:26714 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+0    2015-05-04 16:42:49672 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+22743 2015-05-04 16:43:12415 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D412374.aspx download failed
+69005 2015-05-04 16:43:58677 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Conference_8272800.aspx download failed
+133956 2015-05-04 16:45:03628 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jswl201305017
+191509 2015-05-04 16:46:01181 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jsjfzsjytxxxb201208007&Type=Download
+233976 2015-05-04 16:46:43648 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2524040.aspx download failed
+0    2015-05-04 16:52:31747 [main] INFO  org.apache.http.impl.execchain.RetryExec  - I/O exception (java.net.SocketException) caught when processing request to {}->http://stat.sgst.cn:80: Operation timed out
+2    2015-05-04 16:52:31749 [main] INFO  org.apache.http.impl.execchain.RetryExec  - Retrying request to {}->http://stat.sgst.cn:80
+0    2015-05-04 16:59:23139 [main] INFO  ecnu.ica.wordsearch.model.CreateFloderFile  -  Create directory /Users/bqhuang/Development/workspace/SearchWord/集成电路PDF Failure 
+62223 2015-05-04 17:00:25362 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_D412374.aspx download failed
+116480 2015-05-04 17:01:19619 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Conference_8272800.aspx download failed
+143671 2015-05-04 17:01:46810 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jswl201305017
+168465 2015-05-04 17:02:11604 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jsjfzsjytxxxb201208007&Type=Download
+190441 2015-05-04 17:02:33580 [main] INFO  ecnu.ica.wordsearch.SGST.parseSGST  - http://lib-wf.sgst.cn/D/Thesis_Y2524040.aspx download failed
+252464 2015-05-04 17:03:35603 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_gdyjs201107027&Type=Download
+272739 2015-05-04 17:03:55878 [main] INFO  org.apache.http.impl.execchain.RetryExec  - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://stat.sgst.cn:80: The target server failed to respond
+272739 2015-05-04 17:03:55878 [main] INFO  org.apache.http.impl.execchain.RetryExec  - Retrying request to {}->http://stat.sgst.cn:80
+290452 2015-05-04 17:04:13591 [main] ERROR ecnu.ica.wordsearch.SGST.parseSGST  - com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: Too much redirect for http://lib-wf.sgst.cn/Service/File/File.ashx?fileID=Periodical_jswl201204015&Type=Download

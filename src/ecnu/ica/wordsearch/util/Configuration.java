@@ -9,13 +9,14 @@ import java.util.Properties;
 
 import javax.naming.ConfigurationException;
 
+import org.apache.commons.lang3.ObjectUtils.Null;
 import org.apache.log4j.Logger;
 
 public class Configuration {
 
 	private final static Logger LOGGER = Logger.getLogger(Configuration.class);
 	private static Properties config;// 记录配置项
-	private static final String PROPERTIES_FILE_NAME = System.getProperty("user.dir")+"\\config\\conf.properties";
+	private static final String PROPERTIES_FILE_NAME = System.getProperty("user.dir") + File.separator+ "config" + File.separator+ "conf.properties";
 	
 	public Configuration() {
 	}
@@ -61,10 +62,10 @@ public class Configuration {
 	}
 	
 	/*public static void main(String[] args) throws ConfigurationException {
-		String filename = System.getProperty("user.dir") + "\\config\\conf.properties";
+		String filename = System.getProperty("user.dir") + File.separator+ "config"+File.separator+"conf.properties";
 		System.out.println(filename);
 		Configuration conf = new Configuration(filename);
-//		System.out.println(conf.getValue("NumPage"));
+		System.out.println(conf.getValue("NumPage"));
 		conf.setValue(1000);
 	}*/
 }

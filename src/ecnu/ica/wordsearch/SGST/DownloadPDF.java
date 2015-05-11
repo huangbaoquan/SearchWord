@@ -3,6 +3,8 @@ package ecnu.ica.wordsearch.SGST;
 import java.io.File;
 import java.util.ArrayList;
 
+import javax.naming.ConfigurationException;
+
 import org.apache.log4j.Logger;
 
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
@@ -25,15 +27,15 @@ public class DownloadPDF {
 	private static Logger logger = Logger.getLogger(DownloadPDF.class);
 	private static String PATH = System.getProperty("user.dir");
 	private HtmlPage loginPage;
-	private static Configuration conf;
 	private final static String CONFIG_FILE_NAME = System.getProperty("user.dir") + File.separator + "config" + File.separator + "conf.properties";
 	private static int COUNT;
 	/** 
 	* @Title       : DownloadPDF
 	* @Description : TODO initializer DownLoad
 	* @return      : 
+	* @throws ConfigurationException 
 	*/
-	private void init()
+	private void init() 
 	{
 		//Login in SGST.cn
 		SearchPaper sPaper = new SearchPaper();
@@ -65,6 +67,7 @@ public class DownloadPDF {
 				 * Scroll Specific Number of Page
 				 */
 				HtmlPage gotoPage = downloader.scrollPage(page, num);
+				System.out.println(gotoPage.asText());
 				
 				String fileFloderName = "集成电路PDF";
 				String filepath = "";
@@ -77,12 +80,13 @@ public class DownloadPDF {
 				{
 					filepath = PATH + File.separator + fileFloderName;
 				}
-				while(COUNT < CountPage)
+				if(COUNT < CountPage)
 				{
 					try 
 					{	
 						while(gotoPage != null)
 						{
+							++COUNT;
 							int i = 5;
 							//Crawl URLS
 							ArrayList<String> URLS = downloader.fetchPaperUrl(gotoPage);
@@ -103,14 +107,13 @@ public class DownloadPDF {
 								i--;
 							}
 							System.out.println(TheCrawlerUtil.GetCurrentDate() + 
-									"Downloading URL Page Numbers: " + COUNT*10);
-							COUNT++;
+									" Downloading URL Page Numbers: " + COUNT*10);
 						}
-						conf.setValue(COUNT);
-						System.out.println(COUNT);
-						break;
 					} catch (Exception e) {
-						conf.setValue(COUNT);
+						System.out.println("COUNT: "+ COUNT);
+						configuration.setValue(COUNT);
+						logger.error(e.toString());
+						e.printStackTrace();
 					}
 				}
 			} catch (Exception e) {

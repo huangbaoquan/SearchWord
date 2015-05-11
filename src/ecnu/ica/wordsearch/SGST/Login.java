@@ -23,7 +23,7 @@ import ecnu.ica.wordsearch.util.WebConstructor;
  */
 public class Login {
 	private static Logger log = Logger.getLogger(Login.class);
-	final private static String LOGIN_STRING = "huangbaoquan2015";
+	final private static String LOGIN_STRING = "heliqun2015";
 	final private static String PASS_STRING = "12345ecnu";
 	final private static String LOGINURL_STRING = "http://116.236.205.179/ids/LoginServlet?coAppName=VVVNUw%3D%3D&coSessionId=VkQxTnRQOGI3bkZoZkJqMzZMVEN2TXBtbTdOR2trcHN4cjF0a1J4NkwybEZMalJYNHlaRyEtMTE1MjkwNjkzMyExNDMwNDg2ODI5ODQ0&surl=aHR0cDovL21lbWJlci5zZ3N0LmNuOjgwL3V1bXMvbG9naW4uanNwP2JhY2tVcmw9aHR0cDovL2xpYi5zZ3N0LmNuLyZjb20udHJzLnVzZUlEU1NTT1BhZ2U9MQ==";
 

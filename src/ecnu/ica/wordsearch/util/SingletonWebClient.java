@@ -20,7 +20,7 @@ public class SingletonWebClient {
 		private final static SingletonWebClient INSTANCE_CLIENT  = new SingletonWebClient();
 	}
 	public SingletonWebClient() {
-		System.out.println("进行实例化");
+		System.out.println("WebClient Singlenton init");
 		// 设置模拟浏览器的版本型号
 		webClient = new WebClient(BrowserVersion.getDefault());
 		// 设置支持浏览器是否解析javascript和 css
@@ -32,6 +32,7 @@ public class SingletonWebClient {
 		webClient.getOptions().setThrowExceptionOnScriptError(false);
 		webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
 		webClient.getOptions().setAppletEnabled(false);
+//		webClient.getOptions().setRedirectEnabled(false);
 	}
 
 	public static final SingletonWebClient getInstance()
